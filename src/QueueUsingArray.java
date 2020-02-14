@@ -3,7 +3,7 @@ public class QueueUsingArray {
   int beginning;
   int top;
 
-  // Queue Creation with size as an argument to constructor.
+  // Queue Creation with size as an argument to parameterised constructor.
   public QueueUsingArray(int size) {
   arr = new int[size];
   beginning = -1;
@@ -33,7 +33,7 @@ public class QueueUsingArray {
 // print all elements value from queue
   public void printQueue() {
     if(!isQueueEmpty()) {
-     
+
       for(int i=beginning; i<=top; i++) {
         System.out.println(arr[i] + "   ");
       }
